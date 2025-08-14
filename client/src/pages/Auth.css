@@ -1,14 +1,41 @@
 .container {
-  max-width: 400px;
-  margin: auto;
-  padding: 20px;
+  max-width: 400px;        /* box width */
+  margin: 50px auto;       /* center horizontally & add top margin */
+  padding: 30px;           /* inner spacing */
+  border: 2px solid #333;  /* visible border */
+  border-radius: 10px;     /* rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  background-color: #fff;  /* white background */
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px; /* space between fields */
+.form input {
+  width: 100%;             /* full width input fields */
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
+
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 3px;
+}
+
 
 .form div {
   display: flex;
@@ -26,24 +53,6 @@ label {
   box-sizing: border-box; /* includes padding in width */
   border: 1px solid #ccc;
   border-radius: 5px;
-}
-
-.error {
-  font-size: 12px;
-  color: red;
-}
-
-.button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #0056b3;
 }
 
 .nav {
