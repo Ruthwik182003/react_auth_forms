@@ -1,67 +1,85 @@
+/* Container */
 .container {
-  max-width: 400px;        /* box width */
-  margin: 50px auto;       /* center horizontally & add top margin */
-  padding: 30px;           /* inner spacing */
-  border: 2px solid #333;  /* visible border */
-  border-radius: 10px;     /* rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
-  background-color: #fff;  /* white background */
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
 }
 
-.form input {
-  width: 100%;             /* full width input fields */
+/* Heading */
+.h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  color: #444;
+}
+
+/* Input fields */
+.input {
   padding: 10px;
-  margin: 8px 0;
+  font-size: 14px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s;
 }
 
+.input:focus {
+  border-color: #007bff;
+}
+
+/* Error message */
+.error {
+  font-size: 12px;
+  color: red;
+  margin-top: -8px;
+}
+
+/* Button */
 .button {
-  width: 100%;
+  background: #007bff;
+  color: #fff;
   padding: 10px;
-  background-color: #4CAF50;
-  color: white;
+  font-size: 16px;
+  font-weight: bold;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background 0.2s;
 }
 
 .button:hover {
-  background-color: #45a049;
+  background: #0056b3;
 }
 
-.error {
-  color: red;
-  font-size: 0.85rem;
-  margin-top: 3px;
-}
-
-
-.form div {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.input {
-  width: 100%;
-  padding: 8px;
-  box-sizing: border-box; /* includes padding in width */
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
+/* Navigation link section */
 .nav {
-  margin-top: 10px;
   text-align: center;
+  margin-top: 15px;
 }
 
 .link {
-  margin-left: 5px;
   color: #007bff;
+  margin-left: 5px;
   text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
