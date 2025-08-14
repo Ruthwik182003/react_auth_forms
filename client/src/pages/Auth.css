@@ -1,85 +1,58 @@
-/* Container */
 .container {
   max-width: 400px;
-  margin: 50px auto;
+  margin: auto;
   padding: 20px;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
 }
 
-/* Heading */
-.h1 {
-  text-align: center;
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-/* Form */
 .form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 15px; /* space between fields */
 }
 
-/* Labels */
+.form div {
+  display: flex;
+  flex-direction: column;
+}
+
 label {
   font-weight: bold;
-  color: #444;
+  margin-bottom: 5px;
 }
 
-/* Input fields */
 .input {
-  padding: 10px;
-  font-size: 14px;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box; /* includes padding in width */
   border: 1px solid #ccc;
-  border-radius: 6px;
-  outline: none;
-  transition: border-color 0.2s;
+  border-radius: 5px;
 }
 
-.input:focus {
-  border-color: #007bff;
-}
-
-/* Error message */
 .error {
   font-size: 12px;
   color: red;
-  margin-top: -8px;
 }
 
-/* Button */
 .button {
-  background: #007bff;
-  color: #fff;
+  background-color: #007bff;
+  color: white;
   padding: 10px;
-  font-size: 16px;
-  font-weight: bold;
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background 0.2s;
 }
 
 .button:hover {
-  background: #0056b3;
+  background-color: #0056b3;
 }
 
-/* Navigation link section */
 .nav {
+  margin-top: 10px;
   text-align: center;
-  margin-top: 15px;
 }
 
 .link {
-  color: #007bff;
   margin-left: 5px;
+  color: #007bff;
   text-decoration: none;
-}
-
-.link:hover {
-  text-decoration: underline;
 }
